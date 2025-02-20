@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/574d71db8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-container">
+          <div class="header-text">
+            <h1>Hi, I'm <span>Conal</span><br />McCrory from Ireland</h1>
+            <h2>
+              I'm a 
+              <span>
+                <span>Coder!</span>
+                <span>Developer!</span>
+                <span>Programmer!</span>
+                <span>Freelancer!</span>
+              </span>  
+            </h2>
+          </div>
+            <div class="portfolio-image">
+              <img src="images/photo.png" alt="Portfolio Image">
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-column-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-column-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A highly motivated Junior Full Stack Developer with a background in finance and customer service, bringing a strong problem-solving mindset,
+              adaptability, and a passion for technology. After over a decade in the financial sector, I pursued my lifelong passion for software development,
+              completing a Diploma in Full Stack Software Development from Code Institute.
+            </p>
+            <br>
+            <p>
+              I am competent in Python, JavaScript, HTML, CSS, and have hands-on experience working with Flask, Django, and Bootstrap.
+              I am eager to contribute to a fast-paced, data-driven development team where I can leverage my technical skills and customer-oriented
+              problem-solving experience to build engaging, high-performance applications.
+            </p>
+            <br>
+            <p>
+                I am eager to gain entry into the tech industry into an exciting development team where I can grow and contribute!
+              </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Work Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('additional-information')">Additional Information</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li>
+                      <span>Life Credit Union</span>
+                      <li>Duty Manager<br />(Jan 2020 - Present)</li>
+                    </li>
+                    <li>
+                      <span>Life Credit Union</span>
+                      <li>Acting Branch Manager<br />(Dec 2023 - Dec 2024)</li>
+                    </li>
+                    <li>
+                      <span>Life Credit Union</span>
+                      <li>Member Service Officer<br />(Oct 2016 - Jan 2020)</li>
+                    </li>
+                    
+                  </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Code Institute - Remote</span><br /> 
+                  <li>Diploma in Full Stack Software Development<br>(June 2023 - July 2024)</li>
+                </li>
+                <li>
+                  <span>Athlone Institute of Technology</span><br /> 
+                  <li>Bachelor of Science in Sustainable Construction<br>(Sept 2010 - May 2011)</li>
+                </li>
+                <li>
+                  <span>Athlone Institute of Technology</span><br /> 
+                  <li>Higher Certificate in Science in Construction Studies<br>(Sept 2007 - May 2010)</li>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="additional-information">
+              <ul>
+                <li>
+                    <span>Further Education</span><br /> 
+                    <p>I am currently taking a course through Udemy.com that covers HTML, CSS, JavaScript,
+                      Node, React, PostgreSQL, Web3, and DApps. After completing this course, I plan to
+                      continue learning more about Node and React.</p>
+                  </li>
+                <li>
+                  <span>Volunteering</span><br /> 
+                  <li>Haven Partnership - Haiti (October 2011)</li>
+                  <p>I travelled to Haiti in 2011 as a volunteer with Haven Partnership to build houses
+                    for the homeless following the earthquake. This experience also involved extensive
+                    fundraising in which I was heavily involved with, and our family raised over 36,000 euro.</p>
+                </li>
+                <li>
+                  <span>Hobbies & Interests</span><br /> 
+                  <li>
+                    <p>My hobbies include coding, computing, and technology, as well as music and gardening.</p>
+                  </li>
+                  
+                  
+                </li>
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills Section -->
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Languages</h2>
+            <p>
+                Proficient in building responsive, dynamic websites with HTML,
+                CSS, and JavaScript, ensuring seamless user experiences. Skilled
+                in Python for backend development, automation, and data-driven
+                solutions, integrating frontend and backend for robust web applications.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Databases / Frameworks</h2>
+            <p>
+                Experienced in building scalable web applications using Flask and Django
+                frameworks with PostgreSQL as the database backbone. Proficient in designing
+                responsive and modern interfaces with Bootstrap, ensuring seamless user experiences.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code-fork"></i>
+            <h2>Version Control</h2>
+            <p>
+                Skilled in deploying and managing applications on Heroku, ensuring seamless
+                scalability and performance. Proficient in version control with Git and
+                collaborating on projects using GitHub, enabling efficient and organized
+                development workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>LoveFlowers.ie</h3>
+              <p>
+                Is a modern e-commerce platform connecting users with local florists
+                throughout Ireland. Users can effortlessly purchase flowers online via LoveFlowers.ie,
+                leaving all arrangements in capable hands!
+              </p>
+              <a href="https://github.com/Conal2023/LoveFlowers1.1"><i class="fa-solid fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>ExploreEstepona</h3>
+              <p>
+                Is a comprehensive online platform dedicated to facilitating travelers in meticulously
+                planning and organising their vacations to the stunning Estepona region of Southern Spain.
+              </p>
+              <a href="https://github.com/Conal2023/ExploreEstepona"><i class="fa-solid fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Rock, Paper, Scissors, Lizard, Spock</h3>
+              <p>
+                This website has been created on the Rock, Paper, Scissors, Lizard, Spock game from the TV series
+                The Big Bang Theory. Its add two more options to choose from the original game Rock, Paper, Scissors.
+                This websites gives the user to play against the computer
+              </p>
+              <a href="https://github.com/Conal2023/RPSLS"><i class="fa-solid fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Conal2023?tab=repositories" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> conalmccrory@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 085-1472278</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/conalmccrory/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Conal2023"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/Conal McCrory CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form id="contactform" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="ecad53e2-a6d8-4df1-824c-ff2f125b4761">
+              <label for="name">Name:</label>
+              <input type="text" name="Name" required />
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="Phone" required />
+              <label for="email">Email:</label>
+              <input type="email" name="Email" required />
+              <label for="subject">Subject:</label>
+              <input type="text" name="Subject" required />
+              <label for="message">Message:</label>
+              <textarea name="Message" rows="6" required></textarea>
+              
+              <p>* I will endeavour to respond to all messages within 24 hours.</p>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright. All rights reserved | Designed by <span>Conal McCrory</span>
+        </p>
+      </div>
+    </div>
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const form = document.getElementById("contactform");
+      const msg = document.getElementById("msg");
+      const scriptURL = "https://api.web3forms.com/submit";
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+        // JavaScript for Back to Top button functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById("backToTop");
+
+  // Show button when the user scrolls down 100px
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  // Scroll to top when the button is clicked
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll effect
+    });
+  });
+});
+
+    </script>
+  </body>
+</html>
